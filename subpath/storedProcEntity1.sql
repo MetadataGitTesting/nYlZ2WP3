@@ -1,1 +1,1 @@
-CREATE OR REPLACE test.storedProcEntity1()
+CREATE OR REPLACE test.storedProcEntity1(IN a STRING)

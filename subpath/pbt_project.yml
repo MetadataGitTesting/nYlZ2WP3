@@ -41,10 +41,11 @@ sqlModels:
   .prophecy/metadata/sqlmodels/newmodel:
     name: newmodel
     schema: null
-    description: desc model
+    description: null
     author: ce5uveix.sdpncagq@40thvtzu.com
     files:
     - subpath/newmodel.sql
+    - newmodel.yml
     sqlDependencies:
       models: []
       datasets: []
@@ -82,7 +83,7 @@ sqlTests:
     author: ce5uveix.sdpncagq@40thvtzu.com
     files:
     - test2.sql
-    - .prophecy/sqltests/test2.json
+    - .prophecy/sqltests/test2-renamed.json
     testType: SingularDataTest
     createdAt: '2025-09-19 23:36:37'
 sqlMacros:
@@ -94,6 +95,14 @@ sqlMacros:
     files:
     - sources.yml
     createdAt: '2025-09-19 23:36:37'
+  .prophecy/metadata/sqlmacros/macro2:
+    name: macro2
+    macroType: macro2
+    description: null
+    author: ce5uveix.sdpncagq@40thvtzu.com
+    files:
+    - sources.yml
+    createdAt: '2025-09-19 23:36:38'
 sqlSeeds:
   .prophecy/metadata/sqlseeds/seed1:
     name: seed1
@@ -103,14 +112,22 @@ sqlSeeds:
     files:
     - sources.yml
     createdAt: '2025-09-19 23:36:37'
+  .prophecy/metadata/sqlseeds/seed2:
+    name: seed2
+    schema: null
+    description: null
+    author: ce5uveix.sdpncagq@40thvtzu.com
+    files:
+    - seed2.sql
+    createdAt: '2025-09-19 23:36:38'
 sqlSources:
-  .prophecy/metadata/sqlsources/source:
-    name: source
-    description: source desc
+  .prophecy/metadata/sqlsources/source2:
+    name: source2
+    description: null
     author: ce5uveix.sdpncagq@40thvtzu.com
     files:
     - sources.yml
-    createdAt: '2025-09-19 23:36:37'
+    createdAt: '2025-09-19 23:36:38'
     tables: []
   .prophecy/metadata/sqlsources/multipleFileSource:
     name: multipleFileSource
@@ -118,7 +135,6 @@ sqlSources:
     author: ce5uveix.sdpncagq@40thvtzu.com
     files:
     - sources1.yml
-    - mfs/src/multipleFileSource.yml
     createdAt: '2025-09-19 23:36:37'
     tables:
     - name: table1
